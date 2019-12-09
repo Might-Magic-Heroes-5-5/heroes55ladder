@@ -23,7 +23,7 @@ public class SendEmailService {
         emailHost = "smtp.sendgrid.net";//config.Config.getSMTPhost(config);
         hostPort = 587;//config.Config.getSMTPhostPort(config);
         username = "apikey";//config.Config.getSMTPusername(config);
-        password = "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";//config.Config.getSMTPpassword(config);
+        password = "";//config.Config.getSMTPpassword(config);
         sentFromMail = "noreply@mmh55ladder.com";//config.Config.getSentFromMail(config);
 
         emailProperties = new Properties();
