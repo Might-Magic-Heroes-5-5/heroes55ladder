@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <context-param>
+        <param-name>isLocal</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <context-param>
+        <param-name>connectionString</param-name>
+        <param-value>conn</param-value>
+    </context-param>
+    <context-param>
+        <param-name>SMTPhost</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>SMTPhostPort</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>SMTPusername</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>SMTPpassword</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>sentFromMail</param-name>
+        <param-value>mrbulya@gmail.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>siteUrl</param-name>
+        <param-value>https://www.heroes55ladder.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>DiscordBotToken</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>DiscordDefaultChannelId</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>ServerIp</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>DatabaseUsername</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>DatabasePassword</param-name>
+        <param-value></param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>ChallengeServelet</servlet-name>
+        <servlet-class>ChallengeServelet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ChallengeServelet</servlet-name>
+        <url-pattern>/ChallengeServelet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LadderServlet</servlet-name>
+        <servlet-class>LadderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LadderServlet</servlet-name>
+        <url-pattern>/LadderServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetInfoServlet</servlet-name>
+        <servlet-class>GetInfoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetInfoServlet</servlet-name>
+        <url-pattern>/GetInfoServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetLatestGamesServelet</servlet-name>
+        <servlet-class>GetLatestGamesServelet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetLatestGamesServelet</servlet-name>
+        <url-pattern>/GetLatestGamesServelet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServelet</servlet-name>
+        <servlet-class>LoginServelet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServelet</servlet-name>
+        <url-pattern>/LoginServelet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReportMatchServelet</servlet-name>
+        <servlet-class>ReportMatchServelet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ReportMatchServelet</servlet-name>
+        <url-pattern>/ReportMatchServelet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <servlet-class>FeedbackServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <url-pattern>/FeedbackServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GladiatorServlet</servlet-name>
+        <servlet-class>GladiatorServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GladiatorServlet</servlet-name>
+        <url-pattern>/GladiatorServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
